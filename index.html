@@ -1,221 +1,173 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link href="index.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <meta charset="utf-8" />
-    <title>Witflix | Home Page</title>
   </head>
   <body>
     <header>
-      <img
-        class="logo"
-        src="https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
-      />
       <nav>
-        <a href="">Topic 1</a>
-        <a href="">Topic 2</a>
-        <a href="">Topic 3</a>
-        <a href="">Topic 4</a>
-      </nav>
-      <div class="search-side">
-        <div class="search-bar">
-          <input class="search" type="text" placeholder="Search" />
-          <i class="fa-solid fa-magnifying-glass" style="color: #9e9e9e"></i>
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+          />
         </div>
-      </div>
+        <ul class="nav-links">
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Recently Added</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search-container">
+          <input type="text" placeholder="Search" id="search-input" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </nav>
     </header>
 
-    <main class="main-container">
-      <div class="main-text">
-        <h1>Movie Name</h1>
-        <div class="rating-text">
-          <div class="spans">
-            <div class="span-left">
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <span class="about">7.3</span>
-              <span class="about">IMDB</span>
-            </div>
-
-            <div class="span">
-              <span class="yas about yas2">16+</span>
-              <span class="about">2 h 15 min</span>
-            </div>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Movie Name</h1>
+          <div class="movie-info">
+            <span class="rating">★★★★☆ 7.3/10GB</span>
+            <span class="duration">16+ 2h 15min</span>
           </div>
-
-          <p class="main-p">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            possimus quod, quos corporis nesciunt reiciendis labore placeat. Est
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+            possimus quas, quos corporis nescunt reiciendis labore placeat. Est
             fugiat, explicabo accusamus incidunt quo impedit aut sit doloribus
-            dolores minima minus. Officia, soluta amet accusantium temporibus
-            aspernatur exercitationem quidem voluptatem doloribus.
+            dolores minima minus.Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Voluptates possimus quas, quos corporis
+            nescunt.quos corporis nescunt reiciendis labore placeat.Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Voluptates possimus
+            quas, quos corporis nescunt reiciendis
           </p>
+          <p><strong>Starring:</strong> Lorem ipsum dolor sit.</p>
+          <p><strong>Genre:</strong> Lorem ipsum dolor sit amet.</p>
+          <p><strong>Tags:</strong> Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="play-btn">▶ Play Now</button>
+        </div>
+      </section>
 
-          <div>
-            <ul>
-              <li>
-                <span class="features">Starring: </span>Lorem ipsum dolor sit.
-              </li>
-              <li>
-                <span class="features">Genre: </span>Lorem ipsum dolor sit amet.
-              </li>
-              <li>
-                <span class="features">Tags: </span>Lorem ipsum dolor sit amet
-                consectetur.
-              </li>
-            </ul>
+      <section class="first">
+        <div class="texts">
+          <h3>Popular Movies</h3>
+          <h4>View All</h4>
+        </div>
+        <div class="movie-list">
+          <div class="movie-card" id="p1">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
           </div>
 
-          <div class="play-btn">
-            <i class="fa-solid fa-play fa-pos" style="color: #ffffff"></i>
-            <button class="play-now pl-lg">Play Now</button>
+          <div class="movie-card" id="p2">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
+          </div>
+
+          <div class="movie-card" id="p3">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="right">
-        <img
-          class="netflix"
-          src="https://i.ekonomim.com/2/1280/720/storage/files/images/2024/07/09/netflix-uyelik-ucreti-2024-bir-zam-daha-geldi-netflix-aylik-ucret-ne-kadar-ic29_cover.jpg.webp"
-        />
-      </div>
+      <section class="first">
+        <div class="texts">
+          <h3>Recommended for You</h3>
+          <h4>View All</h4>
+        </div>
+
+        <div class="movie-list">
+          <div class="movie-card" id="p4">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
+          </div>
+
+          <div class="movie-card" id="p5">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
+          </div>
+
+          <div class="movie-card" id="p6">
+            <h2>MOVIE NAME</h2>
+            <div class="span">
+              <div class="yas">15+</div>
+              <span>2 h 21 min</span>
+            </div>
+
+            <button class="play-now">▶ Play Now</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <section class="first">
-      <div class="texts">
-        <h3>Popular Movies</h3>
-        <h4>View All</h4>
-      </div>
-
-      <div class="movie-list">
-        <div class="movie-card" id="p1">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-
-        <div class="movie-card" id="p2">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-
-        <div class="movie-card" id="p3">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="first">
-      <div class="texts">
-        <h3>Recommended for You</h3>
-        <h4>View All</h4>
-      </div>
-
-      <div class="movie-list">
-        <div class="movie-card" id="p4">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-
-        <div class="movie-card" id="p5">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-
-        <div class="movie-card" id="p6">
-          <h2>MOVIE NAME</h2>
-          <div class="span">
-            <div class="yas">15+</div>
-            <span>2 h 21 min</span>
-          </div>
-          <div class="play-btn">
-            <i class="fa-solid fa-play" style="color: #ffffff"></i>
-            <button class="play-now">Play Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer>
-      <div class="f-text">
-        <nav>
-          <a href="">Term Of Us</a>
-          <a href="">Privacy-Policy</a>
-          <a href="">FAQ</a>
-          <a href="">Watch List</a>
-        </nav>
-        <p>
-          <b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Itaque
-          quia, tempore sapiente unde earum debitis quod cum vitae! Repellendus
-          molestiae, ratione neque assumenda culpa distinctio praesentium non at
-          incidunt? Ad suscipit ratione neque assumenda culpa distinctio
-          praesentium non at incidunt? Ad suscipit at incidunt? Ad suscipit
-          neque assumenda culpa distinctio
-        </p>
+      <div class="footer-links">
+        <a href="#">Term Of Us</a>
+        <a href="#">Privacy-Policy</a>
+        <a href="#">FAQ</a>
+        <a href="#">Watch List</a>
       </div>
-      <div class="seperate">
-        <div class="social">
-          <a>Follow Us</a>
-          <div class="img">
-            <img src="assets/3 layers/Frame 59.png" />
-            <img src="assets/3 layers/Frame 61.png" />
-            <img src="assets/3 layers/Frame 60.png" />
-          </div>
-        </div>
-
-        <div class="apps">
-          <a>Apps</a>
-          <div class="media">
-            <img src="assets/2 layers/Frame 64.png" />
-            <img src="assets/2 layers/Frame 65.png" />
-          </div>
-        </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quia
+        tempore sapiente unde earum debilis quod cum vitae! Repellendus
+        molestiae itaque quia tempore sapiente unde earum debilis quod cum
+        vitae! Itaque quia tempore sapiente unde earum debilis
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="app-links">
+        <a href="#"
+          ><img
+            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+            alt="Get it on Google Play"
+            style="height: 3rem"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred_2x.png"
+            alt="Download on the App Store"
+        /></a>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
