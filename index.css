@@ -3,46 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #141414;
     color: #fff;
 }
-
 header {
     background-color: #000;
     padding: 1rem 2rem;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo img {
     height: 30px;
 }
-
 .nav-links {
     display: flex;
     list-style-type: none;
 }
-
 .nav-links li {
     margin-right: 20px;
 }
-
 .nav-links a {
     color: #fff;
     text-decoration: none;
 }
-
 .search-container {
     position: relative;
 }
-
 #search-input {
     padding: 5px 30px 5px 10px;
     border-radius: 1.5rem;
@@ -50,7 +41,6 @@ nav {
     background-color: #333;
     color: #fff;
 }
-
 .search-icon {
     position: absolute;
     right: 10px;
@@ -72,7 +62,6 @@ nav {
     overflow: scroll;
     color: white;
 }
-
 .hero h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -84,14 +73,12 @@ nav {
 }
 .movie-info {
     margin-bottom: 1rem;
- 
 }
 .description{
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: #c2c2c2;
 }
-
 .play-btn {
     background-color: #e50914;
     color: #fff;
@@ -107,7 +94,6 @@ nav {
     align-items: center;
     justify-content: space-between; 
     gap:1rem;
-    
 }
 .texts{
     display: flex;
@@ -131,7 +117,6 @@ nav {
     background-color: black;
     border-radius: 1.5rem;
 }
-
 #p1 {
     background-image: url("https://i.ebayimg.com/images/g/wo0AAOSwM71eN1Zg/s-l1600.webp");
 }
@@ -185,17 +170,14 @@ nav {
 .subtitle{
     margin-bottom: 1.5rem;
 }
-
 .fa-play {
     position: absolute;
     left: 10px;
 }
-
 .features {
     color: rgb(183, 183, 183);
     font-weight: 700;
 }
-
 li{
     font-weight: bold;
     list-style-type: none;
@@ -221,29 +203,22 @@ li{
     color: black;
     margin-left: 1rem;
 }
-
 footer {
     background-color: #000;
     padding: 2rem 4rem;
     text-align: center;
 }
-
 .footer-links {
     margin-bottom: 1rem;
 }
-
 .footer-links a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
-    
 }
-
-
 .social-links {
     margin: 1rem 0;
 }
-
 .social-links a {
     color: #fff;
     margin: 0 10px;
@@ -259,16 +234,13 @@ footer {
     width: 6rem;
     margin: 0;
 }
-
 @media (max-width: 768px) {
     header {
         padding: 1rem;
     }
-
     .nav-links {
         display: none;
     }
-
     .hero {
         padding: 0 2rem;
         height: 60vh;
@@ -285,7 +257,6 @@ footer {
     .movie-list {
         padding: 2rem;
     }
-
     footer {
         padding: 2rem;
     }
